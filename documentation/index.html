@@ -1,64 +1,242 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <title>Documentation | anime.js</title>
+  <title>Learning anime.js</title>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
 
-  <meta property="og:title" content="anime.js">
-  <meta property="og:url" content="https://animejs.com">
-  <meta property="og:description" content="Javascript animation engine">
-  <meta property="og:image" content="https://animejs.com/documentation/assets/img/social-media-image.png">
-
-  <meta name="twitter:card" content="summary_large_image">
-  <meta name="twitter:site" content="@juliangarnier">
-  <meta name="twitter:creator" content="@juliangarnier">
-  <meta name="twitter:title" content="anime.js">
-  <meta name="twitter:description" content="Javascript animation engine">
-  <meta name="twitter:image" content="https://animejs.com/documentation/assets/img/social-media-image.png">
+  <meta property="og:title" content="anime.fightklub.in">
+  <meta property="og:url" content="https://fightklub.in">
+ 
 
   <link rel="apple-touch-icon-precomposed" href="assets/img/apple-touch-icon.png">
-  <link rel="icon" type="image/png" href="assets/img/favicon.png" >
+  <link rel="icon" type="image/png" href="assets/img/favicon.ico" >
 
   <link href="//cloud.typenetwork.com/projects/2160/fontface.css/" rel="stylesheet" type="text/css">
 
   <link href="assets/css/animejs.css" rel="stylesheet">
   <link href="assets/css/anime-theme.css" rel="stylesheet">
   <link href="assets/css/documentation.css" rel="stylesheet">
-  <link href="assets/css/v4.css" rel="stylesheet">
-  <!-- Google tag (gtag.js) -->
-  <script async src="https://www.googletagmanager.com/gtag/js?id=G-16LTPBS8QC"></script>
-  <script>
-    window.dataLayer = window.dataLayer || [];
-    function gtag(){dataLayer.push(arguments);}
-    gtag('js', new Date());
-    gtag('config', 'G-16LTPBS8QC');
-  </script>
-  <script src="../lib/anime.min.js"></script>
+  <script src="anime.min.js"></script>
 </head>
 <body>
-  <div id="top-banner">
+  <!-- <div id="top-banner">
     <button id="close-banner">✕</button>
     <p>
-      Anime.js V4 is now in early access for GitHub Sponsors!
+      Brat2.0 is now in early access!
     </p>
-    <a id="banner-cta" href="https://github.com/sponsors/juliangarnier" target="_blank">Try <span>Anime.js</span> V4</a>
-  </div>
+    <a id="banner-cta" href="https://fightklub.in" target="_blank">Try <span>Brat</span> 2.0</a>
+  </div> -->
   <div class="content">
+
     <header id="docs-header" class="header">
-    <a class="logo" href="https://github.com/juliangarnier/anime/">
-      <img class="anime-mini-logo" src="assets/img/anime-mini-logo.svg" />
-      <span class="version-number"></span>
-    </a>
+      <a class="logo" href="https://fightklub.in/">
+        <img class="anime-mini-logo" src="assets/img/anime-mini-logo.svg" />
+        <span class="version-number"></span>
+      </a>
     </header>
+
     <section class="pane sidebar">
       <nav class="navigation"></nav>
-      <div class="sidebar-info">
-        <a class="github-button" href="https://github.com/juliangarnier/anime/archive/master.zip" data-color-scheme="no-preference: dark; light: dark; dark: dark;" data-icon="octicon-cloud-download" aria-label="Download juliangarnier/anime on GitHub">Download</a>
-        <a class="github-button" href="https://github.com/juliangarnier/anime" data-color-scheme="no-preference: dark; light: dark; dark: dark;" data-show-count="true" aria-label="Star juliangarnier/anime on GitHub">Star</a>
-      </div>
     </section>
+
     <section class="pane demos">
+
+
+<!-- SVG -->
+<article id="svg" class="color-svg">
+  <header>
+    <h2 class="demos-title">SVG</h2>
+  </header>
+
+  <div id="lineDrawing" class="demo">
+    <h3 class="demo-title">Line drawing</h3>
+    <div class="demo-description">
+      <p>
+        Creates path drawing animation using the <code>'stroke-dashoffset'</code> property.<br>
+        Set the path <code>'dash-offset'</code> value with <code>anime.setDashoffset()</code> in a <a href="#fromToValues" class="color-values">from to</a> formated value.
+      </p>
+      <pre><code>strokeDashoffset: [anime.setDashoffset, 0]</code></pre>
+      <p class="bubble info">
+        More info on line drawing animation <a href="https://css-tricks.com/svg-line-animation-works/">here</a>.
+      </p>
+    </div>
+    <div class="demo-content align-center line-drawing-demo">
+  
+  
+      <svg
+      viewBox="0 0 280 100">
+     <g
+        fill="none" fill-rule="evenodd" stroke="currentColor" stroke-width="1" class="lines">
+   
+   
+       <path class="el"
+          d="m 39.778345,33.991664 h -0.28952 c -0.59871,-0.173858 -1.38085,-0.347716 -2.34644,-0.521423 -0.96563,-0.193134 -1.81538,-0.28989 -2.54925,-0.28989 -2.33677,0 -4.03627,0.521461 -5.09844,1.564308 -1.04284,1.023534 -1.5643,2.887182 -1.5643,5.590904 v 1.100788 h 9.8203 v 4.577046 h -9.64648 v 27.780699 h -5.44608 V 46.013397 h -3.67899 v -4.577046 h 3.67899 v -1.071836 c 0,-3.843137 0.95596,-6.788259 2.86787,-8.835364 1.91195,-2.066419 4.67358,-3.099629 8.28499,-3.099629 1.21667,0 2.30782,0.05783 3.27345,0.173859 0.98491,0.116031 1.88292,0.25096 2.69405,0.405581 z"
+   />
+       <path class="el"
+          d="m 51.486096,35.618173 h -6.14132 v -5.648844 h 6.14132 z m -0.34772,37.774829 h -5.44607 V 41.035257 h 5.44607 z"
+   />
+       <path class="el"
+          d="m 87.256152,70.022966 c 0,5.484699 -1.24566,9.511332 -3.73694,12.079861 -2.49127,2.56853 -6.32477,3.852813 -11.500456,3.852813 -1.718816,0 -3.398967,-0.12548 -5.040529,-0.376441 -1.622211,-0.231685 -3.225146,-0.569726 -4.808769,-1.013896 V 79.00335 h 0.28989 c 0.888378,0.347717 2.298142,0.772498 4.229405,1.274608 1.931225,0.521424 3.86245,0.782136 5.793679,0.782136 1.85397,0 3.38929,-0.222237 4.60599,-0.666256 1.21667,-0.44417 2.16295,-1.062198 2.83888,-1.853971 0.67593,-0.753184 1.15877,-1.660876 1.44843,-2.723036 0.28989,-1.062161 0.43453,-2.249878 0.43453,-3.563112 v -2.954797 c -1.64156,1.313234 -3.21551,2.298179 -4.72184,2.954797 -1.48705,0.637304 -3.38933,0.955918 -5.706781,0.955918 -3.862488,0 -6.933127,-1.390451 -9.211994,-4.171427 -2.259515,-2.80029 -3.389291,-6.739994 -3.389291,-11.819112 0,-2.780976 0.38623,-5.175723 1.158728,-7.184202 0.791811,-2.027792 1.863647,-3.775559 3.215508,-5.243263 1.255295,-1.371174 2.780977,-2.433373 4.577008,-3.186557 1.796032,-0.77246 3.582426,-1.158728 5.359182,-1.158728 1.87328,0 3.43756,0.193134 4.69289,0.579364 1.27461,0.366992 2.61679,0.936643 4.02659,1.70914 l 0.34772,-1.390488 h 5.09843 z m -5.44608,-5.214312 V 47.166877 c -1.44842,-0.656617 -2.80029,-1.1201 -4.05558,-1.390488 -1.23598,-0.289512 -2.47196,-0.434532 -3.70794,-0.434532 -2.993427,0 -5.349509,1.004258 -7.068325,3.012737 -1.718778,2.008479 -2.578167,4.924611 -2.578167,8.748473 0,3.630689 0.637304,6.382715 1.911912,8.256 1.274608,1.873285 3.389291,2.809927 6.34409,2.809927 1.58358,0 3.1672,-0.299338 4.75083,-0.898016 1.60289,-0.61799 3.07064,-1.438752 4.40318,-2.462324 z"
+   />
+       <path class="el"
+          d="m 120.76438,73.392873 h -5.44604 V 54.968961 c 0,-1.487055 -0.0869,-2.877543 -0.26079,-4.171465 -0.17386,-1.313234 -0.49247,-2.336768 -0.95599,-3.070639 -0.4828,-0.811124 -1.17804,-1.409802 -2.0857,-1.796069 -0.90769,-0.405544 -2.08573,-0.608315 -3.53416,-0.608315 -1.48705,0 -3.04168,0.366992 -4.66393,1.100787 -1.62222,0.733871 -3.17686,1.670514 -4.663905,2.809966 v 24.159647 h -5.44607 V 28.318 h 5.44607 v 16.309229 c 1.699455,-1.409802 3.456905,-2.510589 5.272255,-3.3024 1.81534,-0.791811 3.67899,-1.187717 5.5909,-1.187717 3.49554,0 6.16063,1.052523 7.99529,3.157569 1.83466,2.105045 2.75199,5.137058 2.75199,9.096075 z"
+   />
+       <path class="el"
+          d="m 145.5587,72.796788 c -1.02357,0.270236 -2.14367,0.492473 -3.36034,0.666255 -1.19739,0.173859 -2.26919,0.260788 -3.21551,0.260788 -3.3024,0 -5.81299,-0.88834 -7.53181,-2.665059 -1.71877,-1.776755 -2.57816,-4.62531 -2.57816,-8.5457 V 45.305827 h -3.67899 v -4.577045 h 3.67899 v -9.298886 h 5.44603 v 9.298886 h 11.23979 v 4.577045 h -11.23979 v 14.74492 c 0,1.699465 0.0385,3.032013 0.11603,3.997644 0.0771,0.946281 0.34772,1.834659 0.81113,2.665096 0.42485,0.772498 1.00426,1.342224 1.73813,1.709141 0.75318,0.347716 1.8926,0.521423 3.41824,0.521423 0.88838,0 1.81538,-0.12548 2.78098,-0.376441 0.96563,-0.270236 1.66087,-0.492472 2.08573,-0.666255 h 0.28989 z"
+   />
+       <path class="el"
+          d="m 180.83695,72.546159 h -7.1842 l -12.97784,-14.165556 -3.53416,3.36034 v 10.805216 h -5.44607 V 27.471286 h 5.44607 v 28.910476 l 15.72987,-16.193348 h 6.86551 l -15.03462,14.947729 z"
+   />
+       <path class="el"
+          d="m 191.65574,72.828397 h -5.44607 V 27.753524 h 5.44607 z"
+   />
+       <path class="el"
+          d="m 225.2713,71.755393 h -5.44603 V 68.16333 c -1.8347,1.448428 -3.59211,2.558891 -5.27229,3.331351 -1.68016,0.772498 -3.53413,1.158766 -5.56192,1.158766 -3.39897,0 -6.04475,-1.03321 -7.93735,-3.099629 -1.8926,-2.085732 -2.83891,-5.137096 -2.83891,-9.154016 V 39.397648 h 5.44607 v 18.42395 c 0,1.641524 0.0771,3.051326 0.23168,4.229367 0.15459,1.158765 0.48284,2.153348 0.98495,2.983748 0.52142,0.849751 1.19735,1.467741 2.02779,1.854009 0.83044,0.38623 2.03743,0.579364 3.62105,0.579364 1.4098,0 2.94512,-0.366992 4.606,-1.100787 1.68015,-0.733871 3.24446,-1.670514 4.69289,-2.809966 V 39.397648 h 5.44603 z"
+   />
+       <path class="el"
+          d="m 260.18091,55.556612 c 0,2.703685 -0.38626,5.137058 -1.15872,7.300044 -0.75319,2.162948 -1.77672,3.978293 -3.07068,5.446035 -1.37118,1.525682 -2.87751,2.674772 -4.51907,3.447269 -1.64156,0.753184 -3.44723,1.129777 -5.41708,1.129777 -1.8347,0 -3.4376,-0.222237 -4.80877,-0.666293 -1.37118,-0.424857 -2.72304,-1.004221 -4.05558,-1.738092 l -0.34772,1.506331 h -5.09847 V 26.90681 h 5.44611 v 16.106457 c 1.52568,-1.255294 3.14789,-2.278866 4.86671,-3.070677 1.71878,-0.811087 3.65,-1.216668 5.79367,-1.216668 3.82383,0 6.83656,1.467742 9.03814,4.403188 2.22093,2.935483 3.33139,7.077959 3.33139,12.427502 z m -5.61989,0.144756 c 0,-3.86245 -0.6373,-6.788258 -1.91191,-8.777424 -1.27461,-2.008479 -3.33135,-3.012737 -6.17027,-3.012737 -1.58362,0 -3.18652,0.347717 -4.80877,1.042885 -1.62221,0.675931 -3.12858,1.554633 -4.51906,2.636145 v 18.539792 c 1.54499,0.695245 2.86786,1.178041 3.96865,1.448429 1.12014,0.270236 2.38507,0.405543 3.79487,0.405543 3.01274,0 5.36882,-0.984907 7.06832,-2.954797 1.71878,-1.989165 2.57817,-5.098431 2.57817,-9.327836 z"
+   />
+     </g>
+   </svg>
+   
+   
+    </div>
+    <script>var lineDrawing = function() {
+  /*DEMO*/
+  anime({
+    targets: '.line-drawing-demo .lines path',
+    strokeDashoffset: [anime.setDashoffset, 0],
+    easing: 'easeInOutSine',
+    duration: 1500,
+    delay: function(el, i) { return i * 250 },
+    direction: 'alternate',
+    loop: true
+  });
+  /*DEMO*/
+  }
+    </script>
+  
+  </div>
+  
+  <div id="motionPath" class="demo">
+    <h3 class="demo-title">Motion path</h3>
+    <div class="demo-description">
+      <p>
+        Animates an element relative to the <code>x</code>, <code>y</code> and <code>angle</code> values of an SVG path element.
+      </p>
+      <pre><code>var myPath = anime.path('svg path');</code></pre>
+      <p>
+        The path function returns a new Function that returns the specified property.
+      </p>
+      <p class="bubble info">
+        Motion path animations are responsive since v3
+      </p>
+      <table>
+        <thead>
+          <td>Parameters</td>
+          <td>Example</td>
+          <td>Info</td>
+        </thead>
+        <tr>
+          <td><code>'x'</code></td>
+          <td><code>myPath('x')</code></td>
+          <td>Return the current x value in <code>'px'</code> of the SVG path</td>
+        </tr>
+        <tr>
+          <td><code>'y'</code></td>
+          <td><code>myPath('y')</code></td>
+          <td>Return the current y value in <code>'px'</code> of the SVG path</td>
+        </tr>
+        <tr>
+          <td><code>'angle'</code></td>
+          <td><code>myPath('angle')</code></td>
+          <td>Return the current angle value in <code>'degrees'</code> of the SVG path</td>
+        </tr>
+      </table>
+    </div>
+    <div class="demo-content motion-path-demo">
+      <div class="motion-path">
+        <div class="small square shadow follow-path"></div>
+        <div class="small square el follow-path"></div>
+        <svg width="256" height="112" viewBox="0 0 256 112">
+          <path fill="none" stroke="currentColor" stroke-width="1" d="M8,56 C8,33.90861 25.90861,16 48,16 C70.09139,16 88,33.90861 88,56 C88,78.09139 105.90861,92 128,92 C150.09139,92 160,72 160,56 C160,40 148,24 128,24 C108,24 96,40 96,56 C96,72 105.90861,92 128,92 C154,93 168,78 168,56 C168,33.90861 185.90861,16 208,16 C230.09139,16 248,33.90861 248,56 C248,78.09139 230.09139,96 208,96 L48,96 C25.90861,96 8,78.09139 8,56 Z"/>
+        </svg>
+      </div>
+    </div>
+    <script>var motionPath = function() {
+  /*DEMO*/
+  var path = anime.path('.motion-path-demo path');
+  
+  anime({
+    targets: '.motion-path-demo .el',
+    translateX: path('x'),
+    translateY: path('y'),
+    rotate: path('angle'),
+    easing: 'linear',
+    duration: 2000,
+    loop: true
+  });
+  /*DEMO*/
+  }
+    </script>
+  
+  </div>
+  
+  <div id="morphing" class="demo">
+    <h3 class="demo-title">Morphing</h3>
+    <div class="demo-description">
+      <p>
+        Creates transition between two svg shapes.
+      </p>
+      <p class="bubble warning">
+        Shapes must have the same number of points!
+      </p><br>
+      <p class="bubble info">
+        More info on SVG shape morphing <a href="https://hackernoon.com/metamorphosis-morphing-svgs-378cf4f3aa58">here</a>.
+      </p>
+    </div>
+    <div class="demo-content align-center morphing-demo">
+      <svg width="140" height="140" viewBox="0 0 140 140">
+        <g fill="none" fill-rule="evenodd">
+          <g fill="currentColor" fill-opacity=".15" transform="translate(0 6)">
+            <polygon points="70 0 136.574 48.369 111.145 126.631 28.855 126.631 3.426 48.369"/>
+            <polygon points="70 18 119.455 53.931 100.565 112.069 39.435 112.069 20.545 53.931"/>
+            <polygon points="70 34.86 101.727 57.911 89.609 95.209 50.391 95.209 38.273 57.911"/>
+            <polygon points="70 50.898 84.864 61.697 79.186 79.171 60.814 79.171 55.136 61.697"/>
+          </g>
+          <polygon class="polymorph" stroke-width="1" stroke="currentColor" points="70 24 119.574 60.369 100.145 117.631 50.855 101.631 3.426 54.369"/>
+        </g>
+      </svg>
+    </div>
+    <script>var morphing = function() {
+  /*DEMO*/
+  anime({
+    targets: '.morphing-demo .polymorph',
+    points: [
+      { value: [
+        '70 24 119.574 60.369 100.145 117.631 50.855 101.631 3.426 54.369',
+        '70 41 118.574 59.369 111.145 132.631 60.855 84.631 20.426 60.369']
+      },
+      { value: '70 6 119.574 60.369 100.145 117.631 39.855 117.631 55.426 68.369' },
+      { value: '70 57 136.574 54.369 89.145 100.631 28.855 132.631 38.426 64.369' },
+      { value: '70 24 119.574 60.369 100.145 117.631 50.855 101.631 3.426 54.369' }
+    ],
+    easing: 'easeOutQuad',
+    duration: 2000,
+    loop: true
+  });
+  /*DEMO*/
+  }
+    </script>
+  
+  </div>
+  
+
+  
+  </article>
+  <!-- -->
+
 
 <!-- TARGETS -->
 <article id="targets" class="color-targets">
@@ -3181,169 +3359,7 @@ animation.finished.then(logFinished);
 </article>
 <!-- -->
 
-<!-- SVG -->
-<article id="svg" class="color-svg">
-<header>
-  <h2 class="demos-title">SVG</h2>
-</header>
 
-<div id="motionPath" class="demo">
-  <h3 class="demo-title">Motion path</h3>
-  <div class="demo-description">
-    <p>
-      Animates an element relative to the <code>x</code>, <code>y</code> and <code>angle</code> values of an SVG path element.
-    </p>
-    <pre><code>var myPath = anime.path('svg path');</code></pre>
-    <p>
-      The path function returns a new Function that returns the specified property.
-    </p>
-    <p class="bubble info">
-      Motion path animations are responsive since v3
-    </p>
-    <table>
-      <thead>
-        <td>Parameters</td>
-        <td>Example</td>
-        <td>Info</td>
-      </thead>
-      <tr>
-        <td><code>'x'</code></td>
-        <td><code>myPath('x')</code></td>
-        <td>Return the current x value in <code>'px'</code> of the SVG path</td>
-      </tr>
-      <tr>
-        <td><code>'y'</code></td>
-        <td><code>myPath('y')</code></td>
-        <td>Return the current y value in <code>'px'</code> of the SVG path</td>
-      </tr>
-      <tr>
-        <td><code>'angle'</code></td>
-        <td><code>myPath('angle')</code></td>
-        <td>Return the current angle value in <code>'degrees'</code> of the SVG path</td>
-      </tr>
-    </table>
-  </div>
-  <div class="demo-content motion-path-demo">
-    <div class="motion-path">
-      <div class="small square shadow follow-path"></div>
-      <div class="small square el follow-path"></div>
-      <svg width="256" height="112" viewBox="0 0 256 112">
-        <path fill="none" stroke="currentColor" stroke-width="1" d="M8,56 C8,33.90861 25.90861,16 48,16 C70.09139,16 88,33.90861 88,56 C88,78.09139 105.90861,92 128,92 C150.09139,92 160,72 160,56 C160,40 148,24 128,24 C108,24 96,40 96,56 C96,72 105.90861,92 128,92 C154,93 168,78 168,56 C168,33.90861 185.90861,16 208,16 C230.09139,16 248,33.90861 248,56 C248,78.09139 230.09139,96 208,96 L48,96 C25.90861,96 8,78.09139 8,56 Z"/>
-      </svg>
-    </div>
-  </div>
-  <script>var motionPath = function() {
-/*DEMO*/
-var path = anime.path('.motion-path-demo path');
-
-anime({
-  targets: '.motion-path-demo .el',
-  translateX: path('x'),
-  translateY: path('y'),
-  rotate: path('angle'),
-  easing: 'linear',
-  duration: 2000,
-  loop: true
-});
-/*DEMO*/
-}
-  </script>
-
-</div>
-
-<div id="morphing" class="demo">
-  <h3 class="demo-title">Morphing</h3>
-  <div class="demo-description">
-    <p>
-      Creates transition between two svg shapes.
-    </p>
-    <p class="bubble warning">
-      Shapes must have the same number of points!
-    </p><br>
-    <p class="bubble info">
-      More info on SVG shape morphing <a href="https://hackernoon.com/metamorphosis-morphing-svgs-378cf4f3aa58">here</a>.
-    </p>
-  </div>
-  <div class="demo-content align-center morphing-demo">
-    <svg width="140" height="140" viewBox="0 0 140 140">
-      <g fill="none" fill-rule="evenodd">
-        <g fill="currentColor" fill-opacity=".15" transform="translate(0 6)">
-          <polygon points="70 0 136.574 48.369 111.145 126.631 28.855 126.631 3.426 48.369"/>
-          <polygon points="70 18 119.455 53.931 100.565 112.069 39.435 112.069 20.545 53.931"/>
-          <polygon points="70 34.86 101.727 57.911 89.609 95.209 50.391 95.209 38.273 57.911"/>
-          <polygon points="70 50.898 84.864 61.697 79.186 79.171 60.814 79.171 55.136 61.697"/>
-        </g>
-        <polygon class="polymorph" stroke-width="1" stroke="currentColor" points="70 24 119.574 60.369 100.145 117.631 50.855 101.631 3.426 54.369"/>
-      </g>
-    </svg>
-  </div>
-  <script>var morphing = function() {
-/*DEMO*/
-anime({
-  targets: '.morphing-demo .polymorph',
-  points: [
-    { value: [
-      '70 24 119.574 60.369 100.145 117.631 50.855 101.631 3.426 54.369',
-      '70 41 118.574 59.369 111.145 132.631 60.855 84.631 20.426 60.369']
-    },
-    { value: '70 6 119.574 60.369 100.145 117.631 39.855 117.631 55.426 68.369' },
-    { value: '70 57 136.574 54.369 89.145 100.631 28.855 132.631 38.426 64.369' },
-    { value: '70 24 119.574 60.369 100.145 117.631 50.855 101.631 3.426 54.369' }
-  ],
-  easing: 'easeOutQuad',
-  duration: 2000,
-  loop: true
-});
-/*DEMO*/
-}
-  </script>
-
-</div>
-
-<div id="lineDrawing" class="demo">
-  <h3 class="demo-title">Line drawing</h3>
-  <div class="demo-description">
-    <p>
-      Creates path drawing animation using the <code>'stroke-dashoffset'</code> property.<br>
-      Set the path <code>'dash-offset'</code> value with <code>anime.setDashoffset()</code> in a <a href="#fromToValues" class="color-values">from to</a> formated value.
-    </p>
-    <pre><code>strokeDashoffset: [anime.setDashoffset, 0]</code></pre>
-    <p class="bubble info">
-      More info on line drawing animation <a href="https://css-tricks.com/svg-line-animation-works/">here</a>.
-    </p>
-  </div>
-  <div class="demo-content align-center line-drawing-demo">
-    <svg viewBox="0 0 280 100">
-      <g fill="none" fill-rule="evenodd" stroke="currentColor" stroke-width="1" class="lines">
-        <path class="el" d="M58 80V50.12C57.7 41.6 51.14 35 43 35a15 15 0 0 0 0 30h7.5v15H43a30 30 0 1 1 0-60c16.42 0 29.5 13.23 30 29.89V80H58z"/>
-        <path class="el" d="M73 80V20H58v60h15z"/>
-        <path class="el" d="M58 80V49.77C58.5 33.23 71.58 20 88 20a30 30 0 0 1 30 30v30h-15V50a15 15 0 0 0-15-15c-8.14 0-14.7 6.6-15 15.12V80H58zm75 0V20h-15v60h15z"/>
-        <path class="el" d="M118 80V49.77C118.5 33.23 131.58 20 148 20a30 30 0 0 1 30 30v30h-15V50a15 15 0 0 0-15-15c-8.14 0-14.7 6.6-15 15.12V80h-15zm-7.5-60a7.5 7.5 0 1 1-7.48 8v-1c.25-3.9 3.5-7 7.48-7z"/>
-        <path class="el" d="M133 65a15 15 0 0 1-15-15v-7.5h-15V50a30 30 0 0 0 30 30V65zm30 15V49.77C163.5 33.23 176.58 20 193 20a30 30 0 0 1 30 30v30h-15V50a15 15 0 0 0-15-15c-8.14 0-14.7 6.6-15 15.12V80h-15z"/>
-        <path class="el" d="M238 65a15 15 0 0 1 0-30c8.1 0 14.63 6.53 15 15h-15v15h30V49.89C267.5 33.23 254.42 20 238 20a30 30 0 0 0 0 60V65z"/>
-        <path class="el" d="M260.48 65a7.5 7.5 0 1 1-7.48 8v-1c.26-3.9 3.5-7 7.48-7z"/>
-      </g>
-    </svg>
-  </div>
-  <script>var lineDrawing = function() {
-/*DEMO*/
-anime({
-  targets: '.line-drawing-demo .lines path',
-  strokeDashoffset: [anime.setDashoffset, 0],
-  easing: 'easeInOutSine',
-  duration: 1500,
-  delay: function(el, i) { return i * 250 },
-  direction: 'alternate',
-  loop: true
-});
-/*DEMO*/
-}
-  </script>
-
-</div>
-
-</article>
-<!-- -->
 
 <!-- EASINGS -->
 <article id="easings" class="color-easings">
@@ -4177,40 +4193,19 @@ anime({
 <!-- -->
 
     </section>
+
     <section class="pane demo-info">
       <header class="description-header">
         <h2><span></span></h2>
       </header>
       <div class="info-output"></div>
     </section>
-    <section class="pane sponsors-pane">
-      <header class="description-header">
-        <a target="_blank" href="https://github.com/sponsors/juliangarnier"><h2>Sponsors</h2></a>
-      </header>
-      <div id="docs-sponsors-list">
-        <a class="sponsor-logo" target="_blank" href="https://huly.io">
-          <img src="assets/sponsors/huly-logomark.svg" />
-          <span class="sponsor-name">Huly</span>
-        </a>
-        <a class="sponsor-logo sponsor-placeholder" target="_blank" href="https://github.com/sponsors/juliangarnier">
-          <img src="assets/img/sponsor-logo.png" />
-          <span class="sponsor-name">Your logo here</span>
-        </a>
-      </div>
-    </section>
+
   </div>
-  <script async defer src="https://buttons.github.io/buttons.js"></script>
-  <script>
-    (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
-    (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
-    m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
-    })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
-    ga('create', 'UA-79927007-1', 'auto');
-    ga('send', 'pageview');
-  </script>
+  <!-- <script async defer src="https://buttons.github.io/buttons.js"></script> -->
   <script src="assets/js/vendors/highlight.pack.js"></script>
-  <script src="assets/js/vendors/beautify-html.js"></script>
+  <!-- <script src="assets/js/vendors/beautify-html.js"></script> -->
   <script src="assets/js/documentation.js"></script>
-  <script src="assets/js/v4.js"></script>
+  <!-- <script src="assets/js/v4.js"></script> -->
 </body>
 </html>
