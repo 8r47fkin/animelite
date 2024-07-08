@@ -103,19 +103,19 @@ anime({
 
 ## [Documentation](https://animejs.com/documentation/)
 
-* [Targets](https://animejs.com/documentation/#cssSelector)
-* [Properties](https://animejs.com/documentation/#cssProperties)
-* [Property parameters](https://animejs.com/documentation/#duration)
-* [Animation parameters](https://animejs.com/documentation/#direction)
-* [Values](https://animejs.com/documentation/#unitlessValue)
-* [Keyframes](https://animejs.com/documentation/#animationKeyframes)
-* [Staggering](https://animejs.com/documentation/#staggeringBasics)
-* [Timeline](https://animejs.com/documentation/#timelineBasics)
-* [Controls](https://animejs.com/documentation/#playPause)
-* [Callbacks and promises](https://animejs.com/documentation/#update)
-* [SVG Animations](https://animejs.com/documentation/#motionPath)
-* [Easing functions](https://animejs.com/documentation/#linearEasing)
-* [Helpers](https://animejs.com/documentation/#remove)
+* [Targets](https://anime.fightklub.in/#cssSelector)
+* [Properties](https://anime.fightklub.in/#cssProperties)
+* [Property parameters](https://anime.fightklub.in/#duration)
+* [Animation parameters](https://anime.fightklub.in/#direction)
+* [Values](https://anime.fightklub.in/#unitlessValue)
+* [Keyframes](https://anime.fightklub.in/#animationKeyframes)
+* [Staggering](https://anime.fightklub.in/#staggeringBasics)
+* [Timeline](https://anime.fightklub.in/#timelineBasics)
+* [Controls](https://anime.fightklub.in/#playPause)
+* [Callbacks and promises](https://anime.fightklub.in/#update)
+* [SVG Animations](https://anime.fightklub.in/#motionPath)
+* [Easing functions](https://anime.fightklub.in/#linearEasing)
+* [Helpers](https://anime.fightklub.in/#remove)
 
 ## [Demos and examples](http://codepen.io/collection/b392d3a52d6abf5b8d9fda4e4cab61ab/)
 
@@ -139,6 +139,4 @@ anime({
 | --- | --- | --- | --- | --- |
 | 24+ | 8+ | 11+ | 32+ | 15+ |
 
-## <a href="https://animejs.com"><img src="/documentation/assets/img/animejs-v3-logo-animation.gif" width="150" alt="anime-js-v3-logo"/></a>
-
-[Website](https://animejs.com/) | [Documentation](https://animejs.com/documentation/) | [Demos and examples](http://codepen.io/collection/b392d3a52d6abf5b8d9fda4e4cab61ab/) | [MIT License](LICENSE.md) | © 2019 [Julian Garnier](http://juliangarnier.com).
+## <a href="https://anime.fightklub.in"><img src="/documentation/assets/img/animejs-v3-logo-animation.gif" width="150" alt="anime-js-v3-logo"/></a>
